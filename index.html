@@ -1,0 +1,40 @@
+<!DOCTYPE html>  <!--means it's html5-->
+<html lang="en"><!--Language is english-->
+<head>
+  <meta charset="UTF-8"> <!--Character encoding is set to UTF8-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Scale is set to be responsive-->
+  <title>Burger Builder</title> <!--Tiltle dyal page-->
+  <link rel="stylesheet" href="styles.css"><!--Link to CSS sourceCode-->
+</head>
+<body>
+  <!-- First Page -->
+  <div id="welcome-page"><!--Container d 1st page-->
+    <h1>Hello! Make Your Burger</h1> <!--HeadLine-->
+    <button id="start-button">Start Building</button><!--button dyal 2nd page-->
+</div><!-- page's container enclosure--> 
+
+  <!-- Second Page -->
+  <div id="burger-builder" style="display: none;">
+    <h1>Build Your Burger</h1>
+
+    <!-- List of Ingredients -->
+    <div class="ingredients">
+      <div class="ingredient Bacon" draggable="true" data-ingredient="Bacon">🥩</div>
+      <div class="ingredient Cheese" draggable="true" data-ingredient="Cheese">🧀</div>
+      <div class="ingredient Tomato" draggable="true" data-ingredient="Tomato">🍅</div>
+      <div class="ingredient Salad" draggable="true" data-ingredient="Salad">🥬</div>
+      <div class="ingredient Bread-Top" draggable="true" data-ingredient="Bread-Top">🍞</div>
+      <div class="ingredient Bread-bottom" draggable="true" data-ingredient="Bread-bottom">🍞</div>
+    </div>
+
+    <!-- Drop Zone -->
+    <div class="drop-zone" id="drop-zone"></div>
+
+    <!-- Undo Button -->
+    <button id="undo-button">Undo</button>
+    <button id="retry-button">Retry</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
